@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<script>
+    function find3rdNumber(arr) {
+        for (let i = 0; i < arr.length-1; i++) {
+            for(let j = i+1; j < arr.length; j++) {
+                if(arr[i] > arr[j]) {
+                    let temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        document.write('Điểm thi cao thứ 3: ' + arr[arr.length - 3]);
+    }
+    let arr1 = [5,10,24,33,40,44,35];
+    find3rdNumber(arr1);
+
+</script>
+</body>
+</html>

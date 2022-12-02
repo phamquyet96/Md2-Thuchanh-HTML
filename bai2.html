@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    function tryRemoveFromArray(arr, number) {
+        for (let i = 0; i < arr.length; i++) {
+            if (i == number) {
+                arr.splice(i, 1);
+            }
+        }
+        return arr;
+    }
+    let arr1 = [5,10,15,24,55];
+    let value = tryRemoveFromArray(arr1,2);
+    document.write(value);
+</script>
+</body>
+</html>
